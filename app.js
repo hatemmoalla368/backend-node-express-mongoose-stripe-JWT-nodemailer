@@ -11,10 +11,11 @@ dotenv.config()
 const app = express();
 app.use(express.json())
 const cors=require('cors')
-app.use(cors({
+app.use(cors());
+/*app.use(cors({
     origin: 'http://localhost:3000', // Your React app URL
     credentials: true // Allow credentials (cookies, authorization headers, etc.)
-  }));
+  }));*/
 /*app.use(cors({
     origin: 'https://frontend-react-crud-hooks-filepond-cloudinary-usemem-cvtdsmo1s.vercel.app' // Replace with your frontend URL
 }));*/
